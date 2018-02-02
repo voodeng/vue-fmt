@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle vue-fmt",
+        "command": "vue-fmt:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "vue-fmt",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "vue-fmt:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

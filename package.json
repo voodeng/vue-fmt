@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "indent-string": "^3.2.0",
-    "js-beautify": "^1.7.5",
     "prettier": "^1.10.2",
     "prettier-eslint": "^8.8.1"
   },

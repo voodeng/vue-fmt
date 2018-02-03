@@ -37,3 +37,7 @@
         }
     }
 </script>
+
+<custome>
+  not other tag
+</custome>

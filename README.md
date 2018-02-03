@@ -30,8 +30,9 @@ npm install
 
 ## Language Support
 
-- [x] Vue File, Components
+- [x] Vue File, Components, the scope is `text.html.vue`
   - [x] template, only html
+  - [ ] pug & other late..
   - [x] style, `sass,scss,less,postcss` use `prettier` parser `postcss`
   - [x] script, javascript and typescript
 - [ ] editorConfig
@@ -43,6 +44,16 @@ Keymaps
 '.editor':
   'alt-l': 'vue-format:format'
 ```
+
+### Tips
+`Setting -> Sort -> Sort enable`
+
+*! it will delete other tags*
+
+if enable, will resort your code by `sortOrder` after formated,  
+only `template, script, style` 3 tags name support,  
+if only input 1 or 2, it will merged with origin code Sort
+
 
 ## License
   `vue-fmt` is MIT-licensed

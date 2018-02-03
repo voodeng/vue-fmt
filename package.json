@@ -31,42 +31,50 @@
           "order": 0
         },
         "useTabs": {
+          "title": "Use Tab",
           "type": "boolean",
           "default": false,
           "order": 2
         },
         "tabWidth": {
+          "title": "Tab/Space Size",
           "type": "integer",
           "default": 2,
           "minimum": 0,
           "order": 2
         },
         "printWidth": {
+          "title": "Wrap Line Length",
           "type": "integer",
           "default": 120,
           "minimum": 0,
           "order": 1
         },
         "semi": {
+          "title": "Semicolons",
           "type": "boolean",
           "default": false,
           "order": 4
         },
         "singleQuote": {
+          "title": "Single Quote",
           "type": "boolean",
           "default": true,
           "order": 5
         },
         "trailingComma": {
+          "title": "Trailing Commas",
           "type": "string",
           "default": "none",
           "enum": ["none", "es5", "all"]
         },
         "bracketSpacing": {
+          "title": "Bracket Spacing",
           "type": "boolean",
           "default": true
         },
         "arrowParens": {
+          "title": "Arrow Function Parentheses",
           "type": "string",
           "default": "avoid",
           "enum": ["avoid", "always"]

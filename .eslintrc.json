@@ -1,0 +1,12 @@
+{
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "globals": {
+        "atom": true
+    },
+    "rules": {
+      "space-before-function-paren": ["error", "always"]
+    }
+    
+}

@@ -1,9 +1,17 @@
 {
   "name": "vue-fmt",
   "main": "./lib/vue-fmt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vue file beautify & format tools",
-  "keywords": ["vue", "vue-fmt", "vue-format", "vue-indent", "format", "beautify", "sort"],
+  "keywords": [
+    "vue",
+    "vue-fmt",
+    "vue-format",
+    "vue-indent",
+    "format",
+    "beautify",
+    "sort"
+  ],
   "configSchema": {
     "useEslint": {
       "type": "boolean",
@@ -20,7 +28,13 @@
           "title": "Html wrap_attributes",
           "type": "string",
           "default": "aligned",
-          "enum": ["auto", "force", "force-aligned", "force-expand-multiline", "aligned"],
+          "enum": [
+            "auto",
+            "force",
+            "force-aligned",
+            "force-expand-multiline",
+            "aligned"
+          ],
           "order": 0
         },
         "htmlWrapLine": {
@@ -66,7 +80,11 @@
           "title": "Trailing Commas",
           "type": "string",
           "default": "none",
-          "enum": ["none", "es5", "all"]
+          "enum": [
+            "none",
+            "es5",
+            "all"
+          ]
         },
         "bracketSpacing": {
           "title": "Bracket Spacing",
@@ -77,7 +95,10 @@
           "title": "Arrow Function Parentheses",
           "type": "string",
           "default": "avoid",
-          "enum": ["avoid", "always"]
+          "enum": [
+            "avoid",
+            "always"
+          ]
         }
       }
     },
@@ -92,7 +113,11 @@
         "sortOrder": {
           "type": "array",
           "title": "Sort order",
-          "default": ["script", "template", "style"],
+          "default": [
+            "script",
+            "template",
+            "style"
+          ],
           "description": "resort `template, script, style` area after formated"
         }
       }

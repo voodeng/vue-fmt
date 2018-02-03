@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle vue-fmt",
-        "command": "vue-fmt:toggle"
+        "label": "Vue file format",
+        "command": "vue-fmt:format"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "vue-fmt",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "vue-fmt:toggle"
+              "label": "Format",
+              "command": "vue-fmt:format"
             }
           ]
         }

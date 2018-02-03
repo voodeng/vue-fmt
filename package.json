@@ -1,19 +1,113 @@
 {
   "name": "vue-fmt",
   "main": "./lib/vue-fmt",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "description": "A Vue file beautify & format tools",
-  "keywords": [
-    "vue",
-    "vue-fmt",
-    "vue-format",
-    "vue-indent",
-    "format",
-    "beautify",
-    "sort"
-  ],
+  "keywords": ["vue", "vue-fmt", "vue-format", "vue-indent", "format", "beautify", "sort"],
+  "configSchema": {
+    "useEslint": {
+      "type": "boolean",
+      "title": "Use prettier-eslint",
+      "default": false,
+      "order": 0
+    },
+    "format": {
+      "type": "object",
+      "title": "Code Format Setting",
+      "description": "<template> tag format use `jsbeautify`, other use `prettier`",
+      "properties": {
+        "htmlWrapAttr": {
+          "title": "Html wrap_attributes",
+          "type": "string",
+          "default": "aligned",
+          "enum": ["auto", "force", "force-aligned", "force-expand-multiline", "aligned"],
+          "order": 0
+        },
+        "htmlWrapLine": {
+          "type": "integer",
+          "title": "Html wrap_line_length",
+          "default": 120,
+          "minimum": 0,
+          "order": 0
+        },
+        "useTabs": {
+          "type": "boolean",
+          "default": false,
+          "order": 2
+        },
+        "tabWidth": {
+          "type": "integer",
+          "default": 2,
+          "minimum": 0,
+          "order": 2
+        },
+        "printWidth": {
+          "type": "integer",
+          "default": 120,
+          "minimum": 0,
+          "order": 1
+        },
+        "semi": {
+          "type": "boolean",
+          "default": false,
+          "order": 4
+        },
+        "singleQuote": {
+          "type": "boolean",
+          "default": true,
+          "order": 5
+        },
+        "trailingComma": {
+          "type": "string",
+          "default": "none",
+          "enum": ["none", "es5", "all"]
+        },
+        "bracketSpacing": {
+          "type": "boolean",
+          "default": true
+        },
+        "arrowParens": {
+          "type": "string",
+          "default": "avoid",
+          "enum": ["avoid", "always"]
+        }
+      }
+    },
+    "sort": {
+      "type": "object",
+      "title": "Sort root tags",
+      "properties": {
+        "enable": {
+          "type": "boolean",
+          "default": false
+        },
+        "sortOrder": {
+          "type": "array",
+          "title": "Sort order",
+          "default": ["script", "template", "style"],
+          "description": "resort `template, script, style` area after formated"
+        }
+      }
+    },
+    "extra": {
+      "type": "object",
+      "title": "Extra",
+      "properties": {
+        "rootIndent": {
+          "type": "boolean",
+          "title": "add Indent to root tags",
+          "default": true
+        },
+        "rootNewline": {
+          "type": "boolean",
+          "title": "add newline between root tags",
+          "default": true
+        }
+      }
+    }
+  },
   "activationCommands": {
-    "atom-workspace": "vue-fmt:toggle"
+    "atom-workspace": "vue-fmt:format"
   },
   "repository": "https://github.com/voodeng/vue-fmt",
   "author": {
@@ -31,11 +125,7 @@
     "prettier-eslint": "^8.8.1"
   },
   "devDependencies": {
-    "eslint-plugin-vue": "^4.2.2",
-    "eslint-config-standard": "^11.0.0-beta.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "^4.16.0",
+    "eslint-plugin-vue": "^4.2.2"
   }
 }

@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "alt-l": "vue-fmt:toggle"
+    "alt-l": "vue-fmt:format"
   }
 }
